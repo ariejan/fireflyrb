@@ -42,4 +42,4 @@ data_sources:
 
 deploy:
   default:
-    dst: "doublealpha@starbuck.ariejan.net:/var/www/vhosts/doublealpha.nl"
+    dst: "fireflyrb@starbuck.ariejan.net:/var/www/vhosts/fireflyrb"
