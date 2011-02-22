@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8' />
+    <title>
+      Firefly - About Firefly
+    </title>
+    <link href='/css/main.css' media='all' rel='stylesheet' type='text/css' />
+    <link href='/css/coderay.css' media='all' rel='stylesheet' type='text/css' />
+  </head>
+  <body>
+    <div id='body'>
+      <div id='contents'>
+        <div id='header'>
+          <a href='/'>
+            <img alt='Your personal URL shortener' src='/images/firefly-logo.png' width='725' />
+          </a>
+        </div>
+        <div id='intro'>
+          Firefly is you your own <strong>personal URL shortener</strong> for your <strong>own domain</strong>. It's written in <strong>Ruby</strong> and powered by <strong>Sinatra</strong>.
+        </div>
+        <h2>Tell me more</h2>
+        <div class='contents'>
+          <ul class='bullet'>
+            <a href='#features'>Features</a>
+            <a href='#code'>Code</a>
+            <a href='#contribute'>Contribute</a>
+          </ul>
+        </div>
+        <h2>Getting started</h2>
+        Getting up and running with Firefly is really easy.
+        First of all install the <code>firefly</code> gem. Also install <code>shotgun</code> so you can easily start Firefly.
+        <pre class="CodeRay"><code class="bash">gem install firefly shotgun&#x000A;</code></pre>Next download the sample <code>config.ru</code> and change it to suit your needs.
+        <pre class="CodeRay"><code class="bash">curl https://github.com/ariejan/firefly/raw/master/config.ru.example &gt; config.ru&#x000A;vim config.ru&#x000A;</code></pre>Then, simply start your own Firefly instance.
+        <pre class="CodeRay"><code class="bash">shotgun&#x000A;</code></pre><h2>Deployment</h2>
+        Firefly is Rack based application, meaning that you can easily deploy it to <a href="http://heroku.com">Heroku</a> or a web server using <a href="http://www.modrails.com/">Passenger</a>.
+        Some servers (including Passenger) require you have a <code>public</code> directory available. Simple create an empty <code>public</code> directory and you're good to go.
+        <a name='features'></a>
+        <h2>Features</h2>
+        Version 1.4.1 of Firefly contains the following features:
+        <ul>
+          <li>Easy to use web interface to shorten URLs</li>
+          <li>API access to shorten URLs programatically</li>
+          <li>Bookmarklet to quickly the current URL in your browser</li>
+          <li>Custom short codes</li>
+          <li>Share-to-Twitter links (to post on your site)</li>
+          <li>Usage tracking</li>
+          <li>Create QR Codes of your short URLs (requires <code>barby</code>)</li>
+        </ul>
+        <a name='qrcode'></a>
+        <h2>Enabling QR Code support</h2>
+        Firefly is able to generate QR Codes containing the short URL on the fly. To enable this you must install two gems: <code>barby</code> and <code>png</code>.
+        <pre class="CodeRay"><code class="bash">gem install barby png&#x000A;</code></pre>Then restart Firefly and QR Support is ready.
+        To get the QR code for a specific short URL, simply add <code>.png</code> to the URL.
+        <pre class="CodeRay"><code class="bash">http://aj.gs/3A =&gt; http://aj.gs/3A.png&#x000A;</code></pre><img src='http://aj.gs/3A.png' width='100' />
+        <a name='code'></a>
+        <h2>The Code</h2>
+        The code for the Firefly gem can be forked at Github.
+        <a href="http://github.com/ariejan/firefly">http://github.com/ariejan/firefly</a>
+        <a name='contribute'></a>
+        <h2>Contribute</h2>
+        There are several ways you can contribute to Firefly:
+        <ul>
+          <li>Create a ticket if you find a bug</li>
+          <li>Fork the project and add new features</li>
+          <li>Blog about it!</li>
+        </ul>
+        <a name='links'></a>
+        <h2>Links</h2>
+        <ul>
+          <li>
+            <a href='http://github.com/ariejan/firefly'>Github repository</a>
+          </li>
+          <li>
+            <a href='http://github.com/ariejan/firefly/issues'>Issue tracker</a>
+          </li>
+        </ul>
+        <h2>Credits</h2>
+        Firefly is written and maintained by <a href="http://ariejan.net">Ariejan de Vroom</a>.
+        <div id='footer'>
+          Copyright © 2010 – 2011 Ariejan de Vroom
+        </div>
+      </div>
+    </div>
+    <a href='https://github.com/ariejan/firefly' id='github'>
+      <img alt='Fork me on GitHub' src='http://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png' />
+    </a>
+  </body>
+</html>

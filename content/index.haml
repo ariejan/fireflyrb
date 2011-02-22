@@ -1,0 +1,100 @@
+---
+title: About Firefly
+---
+
+#intro
+  Firefly is you your own <strong>personal URL shortener</strong> for your <strong>own domain</strong>. It's written in <strong>Ruby</strong> and powered by <strong>Sinatra</strong>.
+
+%h2 Tell me more
+.contents
+  %ul.bullet
+    %a(href="#features") Features
+    %a(href="#code") Code
+    %a(href="#contribute") Contribute
+
+%h2 Getting started
+
+Getting up and running with Firefly is really easy.
+
+First of all install the <code>firefly</code> gem. Also install <code>shotgun</code> so you can easily start Firefly.
+
+- code :bash do
+  gem install firefly shotgun
+
+Next download the sample <code>config.ru</code> and change it to suit your needs.
+
+- code :bash do
+  curl https://github.com/ariejan/firefly/raw/master/config.ru.example > config.ru
+  vim config.ru
+
+Then, simply start your own Firefly instance.
+
+- code :bash do
+  shotgun
+
+%h2 Deployment
+
+Firefly is Rack based application, meaning that you can easily deploy it to <a href="http://heroku.com">Heroku</a> or a web server using <a href="http://www.modrails.com/">Passenger</a>.
+
+Some servers (including Passenger) require you have a <code>public</code> directory available. Simple create an empty <code>public</code> directory and you're good to go.
+
+%a(name="features")
+%h2 Features
+
+Version 1.4.1 of Firefly contains the following features:
+
+%ul
+  %li Easy to use web interface to shorten URLs
+  %li API access to shorten URLs programatically
+  %li Bookmarklet to quickly the current URL in your browser
+  %li Custom short codes
+  %li Share-to-Twitter links (to post on your site)
+  %li Usage tracking
+  %li Create QR Codes of your short URLs (requires <code>barby</code>)
+
+%a(name="qrcode")
+%h2 Enabling QR Code support
+
+Firefly is able to generate QR Codes containing the short URL on the fly. To enable this you must install two gems: <code>barby</code> and <code>png</code>.
+
+- code :bash do
+  gem install barby png
+
+Then restart Firefly and QR Support is ready.
+
+To get the QR code for a specific short URL, simply add <code>.png</code> to the URL.
+
+- code :bash do
+  http://aj.gs/3A => http://aj.gs/3A.png
+
+%img(src="http://aj.gs/3A.png" width="100")
+
+%a(name="code")
+%h2 The Code
+
+The code for the Firefly gem can be forked at Github.
+
+<a href="http://github.com/ariejan/firefly">http://github.com/ariejan/firefly</a>
+
+%a(name="contribute")
+%h2 Contribute
+
+There are several ways you can contribute to Firefly:
+
+%ul
+  %li Create a ticket if you find a bug
+  %li Fork the project and add new features
+  %li Blog about it!
+
+%a(name="links")
+%h2 Links
+
+%ul
+  %li
+    %a(href="http://github.com/ariejan/firefly") Github repository
+  %li
+    %a(href="http://github.com/ariejan/firefly/issues") Issue tracker
+
+%h2 Credits
+
+Firefly is written and maintained by <a href="http://ariejan.net">Ariejan de Vroom</a>.
