@@ -10,8 +10,7 @@ img {
 }
 
 pre.CodeRay > code {
-	border: none;
-	
+  border: none;
 }
 
 .intro {
@@ -82,8 +81,10 @@ pre.CodeRay > code {
   -moz-box-pack: justify;
   padding: 8px 16px;
   background-color: rgba(0, 0, 0, 0.1);
+  color: rgba(0,0,0,0.7);
   width: 100%;
   margin-top: 25px;
+  font-size: 12px;
 }
 
 #footer img {
@@ -126,6 +127,7 @@ h2 {
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 ul.bullet {
