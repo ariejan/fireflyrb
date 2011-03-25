@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html lang='en'>
   <head>
     <meta charset='utf-8' />
@@ -24,6 +24,7 @@
           <ul class='bullet'>
             <a href='#features'>Features</a>
             <a href='#code'>Code</a>
+            <a href='http://rubygems.org/gems/firefly'>Rubygems</a>
             <a href='#contribute'>Contribute</a>
           </ul>
         </div>
@@ -39,8 +40,7 @@
           Firefly is Rack based application, meaning that you can easily deploy it to <a href="http://heroku.com">Heroku</a> or a web server using <a href="http://www.modrails.com/">Passenger</a>.
           Some servers (including Passenger) require you have a <code>public</code> directory available. Simple create an empty <code>public</code> directory and you're good to go.
         </div>
-        <a name='features'></a>
-        <h2>Features</h2>
+        <h2 id='features'>Features</h2>
         <div class='contents'>
           Version 1.4.1 of Firefly contains the following features:
           <ul>
@@ -53,8 +53,7 @@
             <li>Create QR Codes of your short URLs (requires <code>barby</code>)</li>
           </ul>
         </div>
-        <a name='qrcode'></a>
-        <h2>Enabling QR Code support</h2>
+        <h2 id='qrcode'>Enabling QR Code support</h2>
         <div class='contents'>
           <img src='http://aj.gs/3A.png' width='100' align='right' style='padding: 10px;' />
           Firefly is able to generate QR Codes containing the short URL on the fly. This QR Code
@@ -64,14 +63,12 @@
         <pre class="CodeRay"><code class="bash">  gem install barby png&#x000A;</code></pre>  Then restart Firefly and QR Support is ready.
           To get the QR code for a specific short URL, simply add <code>.png</code> to the URL.
         <pre class="CodeRay"><code class="bash">  http://aj.gs/3A =&gt; http://aj.gs/3A.png&#x000A;</code></pre></div>
-        <a name='code'></a>
-        <h2>The Code</h2>
+        <h2 id='code'>The Code</h2>
         <div class='contents'>
           The code for the Firefly gem can be forked at Github.
-          <a href="http://github.com/ariejan/firefly">http://github.com/ariejan/firefly</a>
+          <a href="https://github.com/ariejan/firefly">https://github.com/ariejan/firefly</a>
         </div>
-        <a name='contribute'></a>
-        <h2>Contribute</h2>
+        <h2 id='contribute'>Contribute</h2>
         <div class='contents'>
           There are several ways you can contribute to Firefly:
           <ul>
@@ -83,27 +80,34 @@
             </li>
           </ul>
         </div>
-        <a name='links'></a>
-        <h2>Links</h2>
+        <h2 id='links'>Links</h2>
         <div class='contents'>
           <ul>
             <li>
-              <a href='http://github.com/ariejan/firefly'>Github repository</a>
+              <a href='http://rubygems.org/gems/firefly'>Rubygems</a>
             </li>
             <li>
-              <a href='http://github.com/ariejan/firefly/issues'>Issue tracker</a>
+              <a href='https://github.com/ariejan/firefly'>Github repository</a>
+            </li>
+            <li>
+              <a href='https://github.com/ariejan/firefly/issues'>Issue tracker</a>
             </li>
           </ul>
         </div>
-        <a name='credits'></a>
-        <h2>Credits</h2>
+        <h2 id='credits'>Credits</h2>
         <div class='contents'>
           Firefly is written and maintained by <a href="http://ariejan.net">Ariejan de Vroom</a>.
         </div>
         <div id='footer'>
-          Copyright © 2010 – 2011 Ariejan de Vroom
+          <a href='http://rubygems.org/gems/firefly'>Rubygems</a>
+          <a href='https://github.com/ariejan/firefly'>Code</a>
+          |
+          <a href='https://github.com/ariejan/firefly/issues'>Issue Tracker</a>
+          |
+          <a href='mailto:info@fireflyrb.com'>Contact</a>
           <br />
-          Site design inspired by <a href="http://getbundler.com">getbundler.com</a>
+          Copyright © 2010 – 2011 <a href="http://ariejan.net">Ariejan de Vroom</a>,
+          design inspired by <a href="http://gembundler.com">gembundler.com</a>
         </div>
       </div>
     </div>

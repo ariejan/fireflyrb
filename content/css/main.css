@@ -5,6 +5,15 @@ html {
   font-family: Helvetica, sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: #ff0000;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 img {
   border: 0;
 }
